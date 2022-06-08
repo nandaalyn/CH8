@@ -16,7 +16,9 @@ function Detail() {
 
     const handleDetail = async () =>{
         try {
-        const res = await axios(`https://rent-cars-api.herokuapp.com/customer/car/${id}`);
+          const res = await axios(
+            `https://rent-car-appx.herokuapp.com/admin/car/${id}`
+          );
         setDataDetail(res.data)
         } catch (error) {
         console.log(error);
